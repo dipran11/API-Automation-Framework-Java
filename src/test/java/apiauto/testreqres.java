@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class testreqres {
-
+//Test Positive
     @Test
     public void testGetListUser() {
         given().when()
@@ -41,7 +41,7 @@ public class testreqres {
                 .then().log().all()
                 .assertThat().statusCode(201);
     }
-
+//Test Negative
     @Test
     public void testDeleteListUser() {
         RestAssured.baseURI= "https://reqres.in/";
