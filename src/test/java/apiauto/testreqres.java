@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class testreqres {
-//Test Positive
+
     @Test
     public void testGetListUser() {
         given().when()
@@ -41,17 +41,24 @@ public class testreqres {
                 .then().log().all()
                 .assertThat().statusCode(201);
     }
-//Test Negative
+
     @Test
     public void testDeleteListUser() {
-        RestAssured.baseURI= "https://reqres.in/";
+        RestAssured.baseURI = "https://reqres.in/";
         int userToDelete = 5;
 
         given().log().all()
                 .when().delete("api/users/ " + userToDelete)
                 .then()
                 .log().all()
-                .assertThat().statusCode(500);
+                .assertThat().statusCode(204);
+    }
+    @Test
+    public void testGetListUserNotFound() {
+        given().when()
+                .get("https://reqres.in/api/users/23")
+                .then().log().all()
+                .assertThat().statusCode(404);
 
     }
 }
