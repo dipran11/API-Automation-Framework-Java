@@ -16,9 +16,9 @@ Pada build.gradle
 * Buat Class (public class testreqres)
    Test yang diuji
     - Tes Positif
-     * Get List User pada page 2 dengan status code 200
-     * Create User dengan status code 201
-     * Delete User dengan satus code 204
+      * Get List User pada page 2 dengan status code 200
+      * Create User dengan status code 201
+      * Delete User dengan satus code 204
     - Tes Negatif
       * Get List user yang tidak terdaftar dengan satus code 404
   
