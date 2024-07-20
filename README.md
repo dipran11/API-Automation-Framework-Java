@@ -23,27 +23,8 @@ Pada build.gradle
       * Get List user yang tidak terdaftar dengan satus code 404
   
 ## Library
-plugins {
-    id 'java'
-}
+<img width="599" alt="image" src="https://github.com/user-attachments/assets/ecd42a51-9509-4be1-b8a2-096d3f16141d">
 
-group = 'org.dipra11'
-version = '1.0-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testImplementation group: 'org.testng', name: 'testng', version: '7.10.2'
-    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '5.5.0'
-    testImplementation group: 'org.json', name: 'json', version: '20220924'
-    testImplementation group: 'io.rest-assured', name: 'json-schema-validator', version: '5.5.0'
-}
-
-test {
-    useTestNG()
-    }
 
 ## Screenshoot
 <img width="892" alt="image" src="https://github.com/user-attachments/assets/c38fb865-f00d-4cee-9518-88508c3dc335">
